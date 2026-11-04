@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TriAnatomy Privacy & Support</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: single reading column, sport-coloured bar mark, two sections (privacy, support) */
+:root {
+  --bg: #fbfaf8; --fg: #1d2126; --muted: #5d646d; --line: #e3e1dc; --accent: #c86a08;
+  --swim: #1f87e6; --bike: #ed8c1a; --run: #db3345; --panel: #f2f0ec;
+  --display: "Barlow Semi Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15181c; --fg: #e9eaec; --muted: #9aa1aa; --line: #2b3036; --accent: #f29a35; --panel: #1d2126; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #15181c; --fg: #e9eaec; --muted: #9aa1aa; --line: #2b3036; --accent: #f29a35; --panel: #1d2126; color-scheme: dark }
+* { box-sizing: border-box }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); }
+main { max-width: 680px; margin: 0 auto; padding-block: 48px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.mark { display: flex; align-items: flex-end; gap: 5px; height: 40px; }
+.mark span { width: 14px; border-radius: 5px; }
+h1, h2 { font-family: var(--display); line-height: 1.15; text-wrap: balance; margin: 0; }
+h1 { font-size: 2.4rem; margin-top: 18px; }
+h2 { font-size: 1.6rem; margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line); }
+h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+p, ul { margin: 8px 0; }
+ul { padding-left: 1.2em; }
+.meta { color: var(--muted); font-size: .95rem; }
+.summary { background: var(--panel); border-radius: 10px; padding: 16px 18px; margin-top: 24px; }
+.summary strong { color: var(--accent); }
+a { color: var(--accent); }
+nav { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 12px; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true"><span style="height:20px;background:var(--swim)"></span><span style="height:30px;background:var(--bike)"></span><span style="height:40px;background:var(--run)"></span></div>
+  <h1>TriAnatomy privacy policy and support</h1>
+  <p class="meta">Applies to TriAnatomy for iPhone, iPad and Android. Last updated 4 November 2026.</p>
+  <nav><a href="#privacy">Privacy</a><a href="#support">Support</a></nav>
+
+  <div class="summary"><strong>Short version:</strong> TriAnatomy does not collect any data. There are no accounts, no analytics, no advertising and no tracking. Everything you create stays on your device.</div>
+
+  <h2 id="privacy">Privacy policy</h2>
+  <h3>Data we collect</h3>
+  <p>None. The app has no server and makes no network requests. We cannot see your workouts, plans, history or settings.</p>
+  <h3>Data stored on your device</h3>
+  <p>Workouts, training plans, completed-workout history, your lactate-threshold heart rate and your appearance setting are saved only on your device. Deleting the app deletes them. On iPhone they may be included in your own device backup, which is handled by Apple, not by us.</p>
+  <h3>Calendar access (optional)</h3>
+  <p>If you choose <em>Add to calendar</em> on a training plan, the app asks for calendar permission and writes one event per planned session. On iPhone it creates a calendar called “TriAnatomy”; on Android you choose which calendar to use. The app reads your calendars only to find the ones it can write to and to update or remove the events it created. Calendar data never leaves your device through TriAnatomy. You can remove the events from the plan screen and withdraw permission in your device settings at any time.</p>
+  <h3>Garmin .fit files</h3>
+  <p>When you export a workout, the app creates a .fit file and opens the system share sheet. The file goes only where you send it (for example Files, Garmin Connect or email). TriAnatomy does not upload it anywhere.</p>
+  <h3>Children</h3>
+  <p>The app does not collect personal information from anyone, including children.</p>
+  <h3>Changes</h3>
+  <p>If this policy changes, the new version will be published on this page with a new date.</p>
+
+  <h2 id="support">Support</h2>
+  <h3>Getting your workout onto a Garmin watch</h3>
+  <ul>
+    <li>Open a workout and tap <em>Export .fit</em>.</li>
+    <li>Save the file, then copy it to the watch’s <code>GARMIN/NewFiles</code> folder over USB, or import it with Garmin Connect where your device supports it.</li>
+    <li>The workout appears under Training → Workouts on the watch.</li>
+  </ul>
+  <h3>Calendar events don’t appear</h3>
+  <p>Check that TriAnatomy has calendar permission in your device settings, then open the plan and tap <em>Update calendar</em>. On Android, make sure the chosen calendar is visible and syncing in your calendar app.</p>
+  <h3>Resetting the app</h3>
+  <p>Deleting and reinstalling the app restores the starter workouts and removes your own data. Remove calendar events from the plan screen first.</p>
+  <h3>Contact</h3>
+  <p>For questions or bug reports, use the developer contact link on the TriAnatomy page in the App Store or Google Play.</p>
+  <p class="meta">Exercise content follows Triathlon Anatomy by Mark Klion and Jonathan Cane (Human Kinetics). Educational use only, not medical advice.</p>
+</main>
+</body>
+</html>
