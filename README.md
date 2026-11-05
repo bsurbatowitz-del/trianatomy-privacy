@@ -28,4 +28,4 @@ If this policy changes, the new version will be published at this address with a
 - **Reset:** deleting and reinstalling the app restores the starter workouts and removes your own data. Remove calendar events from the plan screen first.
 - **Contact:** use the developer contact link on the TriAnatomy page in the App Store or Google Play.
 
-Exercise content follows *Triathlon Anatomy* by Mark Klion and Jonathan Cane (Human Kinetics). Educational use only, not medical advice.
+Exercises cite Triathlon Anatomy by Mark Klion and Jonathan Cane (Human Kinetics) as further reading; TriAnatomy is not affiliated with the authors or publisher. Educational use only, not medical advice.
